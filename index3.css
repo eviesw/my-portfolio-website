@@ -1,0 +1,195 @@
+/* GENERAL STYLES ----------------------------------------------------------- */
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Inter' !important;
+    font-weight: 300;
+}
+
+.section {
+    min-height: 100vh;
+    padding: 4em;
+}
+
+/* HEADER ------------------------------------------------------------------ */
+
+header {
+    color: white;
+}
+
+header img {
+    height: 70px;
+}
+
+header div a {
+    font-weight: 400;
+}
+
+
+@media (max-width: 1000px) {
+    .hidden {
+        display: none;
+    }
+}
+
+/* HOME --------------------------------------------------------------------*/
+
+#home {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+    background-image: url(./imgs/Unbenannt.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+#home h1 {
+    width: 70vw;
+}
+
+#home h3 {
+
+}
+
+@media (max-width: 900px) {
+    #home {
+        padding-left: 2em;
+        padding-right: 2em;
+    }
+
+    #home h1, #home h2 {
+        font-size: 3rem;
+        font-weight: 500;
+        text-align: center;
+        align-self: center;
+    }
+
+    #home h3 {
+        font-size: 1.7rem;
+        width: 90%;
+        text-align: center;
+        align-self: center;
+    }
+}
+
+/* ABOUT -------------------------------------------------------------------*/
+
+#about {
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    gap: 6em;
+    padding-top: 14em;
+}
+
+.about-text {
+    width: 35vw;
+}
+
+.about-picture {
+    position: relative;
+    align-self: center;
+}
+
+.about-picture::after {
+    position: absolute;
+    content: "";
+    background-color: rgb(252, 237, 102);
+    height: 100%;
+    width: 100%;
+    top: 20px;
+    left: 20px;
+    z-index: 0;
+}
+
+.about-picture img {
+    width: 450px;
+    position: relative;
+    z-index: 1;
+}
+
+@media (max-width: 1400px) {
+    #about {
+        flex-direction: column;
+        padding-top: 8em;
+        text-align: center;
+    }
+
+    .about-text {
+        width: 100%;
+    }
+
+    .about-picture {
+        width: 350px;
+    }
+}
+
+@media (max-width: 740px) {
+    #about {
+        padding-top: 5em;
+    }
+}
+
+
+/* PROJECTS --------------------------------------------------------------- */
+
+#portfolio {
+    background-color: rgba(46, 139, 86, 0.384);
+}
+
+/* CONTACT ---------------------------------------------------------------- */
+
+#contact {
+    min-height: 82vh;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+form label {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    font-weight: 400;
+}
+
+form input, form textarea {
+    background-color: rgba(197, 197, 197, 0.1);
+    border: 1px solid white;
+    padding: 15px;
+    border-radius: 4px;
+
+}
+
+input[type="submit"] {
+    cursor: pointer;
+    background-color: rgb(229, 230, 176);
+}
+
+/* footer ---------------------------------------------------------------------*/
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    bottom: 0;
+}
+
+.footer-left {
+    display: flex;
+    gap: 2em;
+}
+
+.footer-left i {
+    font-size: 1.5rem;
+}

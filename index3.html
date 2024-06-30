@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | Evie Wilcock</title>
+    <link rel="stylesheet" href="index3.css">
+    <script src="https://kit.fontawesome.com/5f6f4a6f86.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body>
+
+    <!-- HEADER  ------------------------------------------------------------>
+
+    <header>
+        <nav class="fixed bg-black shadow-md w-full z-10 p-4">
+            <div class="px-4 sm:px-6 lg:px-8">
+                <div class="flex justify-between h-16">
+                    <div class="flex-shrink-0 flex items-center">
+                        <img src="./imgs/file.png" alt="">
+                    </div>
+                    <div class="hidden md:flex md:items-center md:space-x-4">
+                        <a href="#home" class="text-lg">HOME</a>
+                        <a href="#about" class="text-lg">ABOUT</a>
+                        <a href="#portfolio" class="text-lg">PORTFOLIO</a>
+                        <a href="#contact" class="text-lg">CONTACT</a>
+                    </div>
+                    <div class="md:hidden flex items-center">
+                        <button id="burger-menu" class="focus:outline-none">
+                            <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div id="mobile-menu" class="hidden md:hidden">
+                <a href="#home" class="block px-4 py-2">Home</a>
+                <a href="#about" class="block px-4 py-2">About</a>
+                <a href="#portfolio" class="block px-4 py-2">Portfolio</a>
+                <a href="#contact" class="block px-4 py-2">Contact</a>
+            </div>
+        </nav>
+    </header>
+
+<!-- MAIN------------------------------------------------------->
+    
+    <main>
+        <!-- SECTION ONE:HOME ---------------------------->
+        <section id="home" class="section text-white">
+            <h1 class="text-8xl font-medium">Hello, I'm Evie.</h1>
+            <h2 class="text-8xl font-medium">Full-Stack Web Developer</h2>
+            <h3 class="text-3xl mt-6 w-6/12">Welcome to my portfolio, here you will find out about me, my projects, previous education and experience and skills, and how to get in touch! Thanks for stopping by.
+            </h3>
+
+        </section>
+        <!-- SECTION TWO:ABOUT --------------------------->
+        <section id="about" class="section bg-white">
+            <div class="about-text">
+                <h2 class="text-5xl font-semibold pt-14">About Me</h2>
+                <p class="pt-5">
+                    Hello! I’m Evie Wilcock, an aspiring full-stack web developer with a passion for creating dynamic and responsive web applications. I am currently honing my skills in a variety of technologies including HTML, CSS, SASS, JavaScript, the MERN stack (MongoDB, Express.js, React, Node.js), Tailwind, and Bootstrap.
+                </p>
+                <p class="pt-5">
+                    I am excited to apply my knowledge to real-world projects and to collaborate with other developers and designers. Feel free to explore my portfolio and get in touch if you’d like to collaborate or learn more about my work!
+                </p>
+            </div>
+            <div class="about-picture">
+                <img src="./imgs/IMG_0020.jpeg" alt="">
+            </div>
+
+        </section>
+        <!-- SECTION THREE:PROJECTS ---------------------->
+        <section id="portfolio" class="section bg-gray-500 text-white">
+            <h2 class="text-5xl font-semibold pt-14">My Work</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+                <!-- Portfolio items here -->
+
+
+
+
+
+            </div>
+        </section>
+        <!-- SECTION FOUR:CONTACT ------------------------>
+        <section id="contact" class="section bg-white">
+            <h2 class="text-5xl font-semibold text-center pt-5 pb-5">Contact Me</h2>
+
+            <form
+            action="https://formspree.io/f/xvgppylv"
+            method="POST">
+            <label>YOUR NAME
+                <input type="text" name="name" placeholder="Type your full name">
+            </label>
+            <label>YOUR EMAIL
+                <input type="email" name="email" placeholder="Enter your email" required>
+            </label>
+            <label>YOUR MESSAGE
+                <textarea name="message" cols="30" rows="5" placeholder="Type your message here..."></textarea>
+            </label>
+            <input type="submit" value="SUBMIT">
+        </form>
+        </section>
+    </main>
+
+    <!-- FOOTER --------------------------------------------------------->
+
+    <footer class="w-full bg-black text-white shadow-md z-10 p-7">
+        <div class="footer-left">
+            <a href="https://github.com/eviesw" target="_blank"><i class="fa-brands fa-github"></i></a>
+            <a href="https://de.linkedin.com/in/evie-wilcock" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://facebook.com" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+        </div>
+        <div class="footer-right">&copy; Evie Wilcock 2024</div>
+    </footer>
+
+
+    <!-- JAVASCRIPT --------------------------------------------------------->
+
+    <script>
+        document.getElementById('burger-menu').addEventListener('click', function () {
+            var menu = document.getElementById('mobile-menu');
+            menu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>
