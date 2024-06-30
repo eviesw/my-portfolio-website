@@ -25,7 +25,12 @@ header img {
 }
 
 header div a {
-    font-weight: 400;
+    font-weight: 500;
+    position: relative;
+}
+
+header div a:hover {
+    border-bottom: 3px solid white;
 }
 
 
@@ -50,10 +55,6 @@ header div a {
 
 #home h1 {
     width: 70vw;
-}
-
-#home h3 {
-
 }
 
 @media (max-width: 900px) {
@@ -87,6 +88,23 @@ header div a {
     padding-top: 14em;
 }
 
+#about h2 {
+    position: relative;
+    display: inline;
+    z-index: 2;
+}
+
+#about h2::after {
+    content: "";
+    position: absolute;
+    background-color: rgb(252, 237, 102);
+    top: 85px;
+    left: 20px;
+    height: 27%;
+    width: 95%;
+    z-index:-10;
+}
+
 .about-text {
     width: 35vw;
 }
@@ -94,6 +112,18 @@ header div a {
 .about-picture {
     position: relative;
     align-self: center;
+}
+
+.about-picture::before {
+    position: absolute;
+    content: "";
+    border-top: 1px solid darkgray;
+    border-left: 1px solid darkgray;
+    height: 100%;
+    width: 100%;
+    top: -20px;
+    left: -20px;
+    z-index: 0;
 }
 
 .about-picture::after {
@@ -118,10 +148,23 @@ header div a {
         flex-direction: column;
         padding-top: 8em;
         text-align: center;
+        gap: 5em;
+        padding-top: 2em;
     }
 
     .about-text {
-        width: 100%;
+        width: 85%;
+        align-self: center;
+    }
+
+    .about-picture {
+        width: 400px;
+    }
+}
+
+@media (max-width: 900px) {
+    .about-text {
+        width: 100%
     }
 
     .about-picture {
@@ -139,13 +182,190 @@ header div a {
 /* PROJECTS --------------------------------------------------------------- */
 
 #portfolio {
-    background-color: rgba(46, 139, 86, 0.384);
+    background-color: rgb(93, 158, 101);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
+
+#portfolio i {
+    color: rgb(76, 133, 83);
+}
+
+#portfolio .first {
+    color: white;
+}
+
+#portfolio i:hover {
+    color: rgba(255, 255, 255, 0.795);
+    cursor: pointer;
+}
+
+#portfolio h2 {
+    position: relative;
+    display: inline;
+    z-index: 2;
+    text-align: center;
+}
+
+#portfolio h2::after {
+    content: "";
+    position: absolute;
+    background-color: rgb(76, 133, 83);
+    top: 47px;
+    left: -10px;
+    height: 40%;
+    width: 99%;
+    z-index:-10;
+}
+
+#portfolio>p {
+    margin-top: 1em;
+    margin-bottom: 3em;
+    text-align: center;
+    font-size: 1em;
+    width: 50vw;
+}
+.project-container {
+    display: flex;
+    justify-content: center;
+    gap: 5em;
+    flex-wrap: wrap;
+}
+
+.project-container i {
+    margin-top: 2.5em;
+    font-size: 3rem;
+    cursor: pointer;
+}
+
+.project-container i:hover {
+    color: rgba(255, 255, 255, 0.795);
+}
+
+.project {
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+    text-align: center;
+}
+
+.project:hover {
+    transform: scale(1.01);
+    cursor: pointer;
+}
+
+.project .image-container {
+    position: relative;
+}
+
+.project .image-container::before {
+    position: absolute;
+    content: "";
+    background-color: rgb(76, 133, 83);
+    height: 100%;
+    width: 100%;
+    top: -20px;
+    left: -20px;
+}
+
+.project .image-container::after {
+    position: absolute;
+    content: "";
+    border-bottom: 1px solid rgba(255, 255, 255, 0.6);
+    border-right: 1px solid rgba(255, 255, 255, 0.6);
+    height: 100%;
+    width: 100%;
+    top: 20px;
+    left: 20px;
+}
+
+.project .image-container img {
+    position: relative;
+    z-index: 1;
+}
+
+.project h3 {
+    margin-top: 2em;
+}
+
+.project a:hover {
+    text-decoration: underline;
+}
+
+.hidden-project {
+    display: none;
+}
+
+.more-projects-button {
+    display: none;
+    background-color: rgb(76, 133, 83);
+    font-weight: 500;
+    padding: 1em;
+}
+
+.more-projects-button:hover {
+    background-color: rgb(63, 114, 69);
+}
+
+@media (max-width: 1730px) {
+    #portfolio i {
+        display: none;
+    }
+
+    .more-projects-button {
+        display: flex;
+    }
+}
+
+@media (max-width: 1500px) and (min-width: 1022px) {
+    .hidden-project {
+        display: flex;
+    }
+}
+
+@media (max-width: 1020px) and (min-width: 700px) {
+    .project {
+        width: 500px;
+    }
+}
+
+
+@media (max-width: 1000px) {
+    #portfolio>p {
+        width: 100%;
+    }
+}
+
+
 
 /* CONTACT ---------------------------------------------------------------- */
 
 #contact {
     min-height: 82vh;
+}
+
+#contact h2 {
+    position: relative;
+    display: inline;
+    z-index: 100;
+}
+
+#contact h2::after {
+    content: "";
+    position: absolute;
+    background-color: rgb(252, 237, 102);
+    top: 48px;
+    left: 20px;
+    height: 40%;
+    width: 96%;
+    z-index:-10;
+}
+
+#contact h3 {
+    width: 384px
 }
 
 form {
@@ -165,15 +385,18 @@ form label {
 
 form input, form textarea {
     background-color: rgba(197, 197, 197, 0.1);
-    border: 1px solid white;
+    /* border-bottom: 1px solid rgba(0, 0, 0, 0.164); */
     padding: 15px;
-    border-radius: 4px;
-
 }
 
 input[type="submit"] {
     cursor: pointer;
-    background-color: rgb(229, 230, 176);
+    background-color: rgb(252, 237, 102);
+    align-self: flex-start;
+}
+
+input[type="submit"]:hover {
+    background-color: rgb(228, 214, 89);
 }
 
 /* footer ---------------------------------------------------------------------*/

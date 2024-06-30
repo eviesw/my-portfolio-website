@@ -53,7 +53,7 @@
         <section id="home" class="section text-white">
             <h1 class="text-8xl font-medium">Hello, I'm Evie.</h1>
             <h2 class="text-8xl font-medium">Full-Stack Web Developer</h2>
-            <h3 class="text-3xl mt-6 w-6/12">Welcome to my portfolio, here you will find out about me, my projects, previous education and experience and skills, and how to get in touch! Thanks for stopping by.
+            <h3 class="text-3xl mt-6 w-6/12">Welcome to my personal website, here you will find out about me, my projects, previous education and experience and skills, and how to get in touch!
             </h3>
 
         </section>
@@ -61,45 +61,102 @@
         <section id="about" class="section bg-white">
             <div class="about-text">
                 <h2 class="text-5xl font-semibold pt-14">About Me</h2>
-                <p class="pt-5">
+                <p class="pt-9">
                     Hello! I’m Evie Wilcock, an aspiring full-stack web developer with a passion for creating dynamic and responsive web applications. I am currently honing my skills in a variety of technologies including HTML, CSS, SASS, JavaScript, the MERN stack (MongoDB, Express.js, React, Node.js), Tailwind, and Bootstrap.
+                </p>
+                <p class="pt-5">
+                    My journey into web development began with a curiosity about how websites are built and a desire to bring my creative ideas to life on the web. Over time, I hope to develop a solid foundation in both front-end and back-end development, and I am continually learning to keep up with the latest trends and best practices in the industry.
                 </p>
                 <p class="pt-5">
                     I am excited to apply my knowledge to real-world projects and to collaborate with other developers and designers. Feel free to explore my portfolio and get in touch if you’d like to collaborate or learn more about my work!
                 </p>
             </div>
             <div class="about-picture">
-                <img src="./imgs/IMG_0020.jpeg" alt="">
+                <img src="./imgs/IMG_0020.jpeg" alt="photo of Evie Wilcock">
             </div>
 
         </section>
         <!-- SECTION THREE:PROJECTS ---------------------->
-        <section id="portfolio" class="section bg-gray-500 text-white">
+        <section id="portfolio" class="section text-white">
             <h2 class="text-5xl font-semibold pt-14">My Work</h2>
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-                <!-- Portfolio items here -->
+            <p class="text-white m-auto font-normal pb-3">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Et, veniam amet odit placeat eius eveniet sequi perferendis, voluptatum laudantium exercitationem, officia tenetur labore molestias aperiam adipisci? Minima reiciendis cumque ipsum.
+            </p>
+            <div class="project-container mt-4 mb-1">
+                <i class="fa-sharp fa-solid fa-angle-left"></i>
+                <div class="project">
+                    <div class="image-container">
+                        <img src="./imgs/Screenshot from 2024-06-30 20-03-56.png" alt="">
+                    </div>
+                    <h3 class="font-semibold">PERSONAL WEBSITE</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat earum voluptatum aliquam quo tempore cupiditate optio.
+                    </p>
+                    <a class="font-semibold" href="projects.html">READ MORE</a>
+                </div>
+                <div class="project">
+                    <div class="image-container">
+                        <img src="./imgs/Screenshot from 2024-06-30 19-58-36.png" alt="">
+                    </div>
+                    <h3 class="font-semibold">PERSONAL WEBSITE</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat earum voluptatum aliquam quo tempore cupiditate optio.
+                    </p>
+                    <a class="font-semibold" href="projects.html">READ MORE</a>
 
-
-
-
-
+                </div>
+                <div class="project">
+                    <div class="image-container">
+                        <img src="./imgs/Screenshot from 2024-06-30 20-01-50.png" alt="">
+                    </div>
+                    <h3 class="font-semibold">PERSONAL WEBSITE</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat earum voluptatum aliquam quo tempore cupiditate optio.
+                    </p>
+                    <a class="font-semibold" href="projects.html">READ MORE</a>
+                </div>
+                <div class="project hidden-project">
+                    <div class="image-container">
+                        <img src="./imgs/screenshot.png" alt="">
+                    </div>
+                    <h3 class="font-semibold">PERSONAL WEBSITE</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat earum voluptatum aliquam quo tempore cupiditate optio.
+                    </p>
+                    <a class="font-semibold" href="projects.html">READ MORE</a>
+                </div>
+                <i class="fa-solid fa-angle-right text-white"></i>
+            </div>
+            <div class="circles flex gap-4 mt-14">
+            <i class="fa-solid fa-circle fa-sm first"></i>
+            <i class="fa-solid fa-circle fa-sm"></i>
+            <i class="fa-solid fa-circle fa-sm"></i>
+            </div>
+            <div class="more-projects-button">
+                <a href="#">MORE PROJECTS</a>
             </div>
         </section>
+
+
+
+
+        
         <!-- SECTION FOUR:CONTACT ------------------------>
         <section id="contact" class="section bg-white">
-            <h2 class="text-5xl font-semibold text-center pt-5 pb-5">Contact Me</h2>
+            <h2 class="text-5xl font-semibold pt-5">Contact Me</h2>
+            <h3 class="pt-9 ml-2 font-normal">Do you have a question, or would you like to work together? Feel free to reach out to me here!</h3>
 
-            <form
+            <form class="pt-5"
             action="https://formspree.io/f/xvgppylv"
             method="POST">
-            <label>YOUR NAME
-                <input type="text" name="name" placeholder="Type your full name">
+            <label>NAME*
+                <input type="text" name="name" placeholder="Type your full name" required>
             </label>
-            <label>YOUR EMAIL
+            <label>EMAIL*
                 <input type="email" name="email" placeholder="Enter your email" required>
             </label>
-            <label>YOUR MESSAGE
-                <textarea name="message" cols="30" rows="5" placeholder="Type your message here..."></textarea>
+            <label>MESSAGE*
+                <textarea name="message" cols="30" rows="5" placeholder="Type your message here"></textarea>
             </label>
             <input type="submit" value="SUBMIT">
         </form>
