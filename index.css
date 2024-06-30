@@ -31,6 +31,7 @@ header div a {
 
 header div a:hover {
     border-bottom: 3px solid white;
+    transition: 0.2s;
 }
 
 
@@ -254,10 +255,11 @@ header div a:hover {
     flex-direction: column;
     gap: 0.5em;
     text-align: center;
+    transition: 0.2s;
 }
 
 .project:hover {
-    transform: scale(1.01);
+    transform: scale(1.02);
     cursor: pointer;
 }
 
@@ -397,6 +399,7 @@ input[type="submit"] {
     cursor: pointer;
     background-color: rgb(252, 237, 102);
     align-self: flex-start;
+    transition: 0.3s;
 }
 
 input[type="submit"]:hover {
