@@ -84,7 +84,7 @@ header div a:hover {
     display: flex;
     justify-content: center;
     /* align-items: center; */
-    gap: 6em;
+    gap: 7em;
     padding-top: 14em;
 }
 
@@ -146,10 +146,8 @@ header div a:hover {
 @media (max-width: 1400px) {
     #about {
         flex-direction: column;
-        padding-top: 8em;
         text-align: center;
         gap: 5em;
-        padding-top: 2em;
     }
 
     .about-text {
@@ -162,7 +160,19 @@ header div a:hover {
     }
 }
 
+@media (max-width: 1200px) {
+    #about {
+        gap: 3em;
+        padding-top: 10em
+    }
+}
+
 @media (max-width: 900px) {
+    #about {
+        gap: 3em;
+        padding-top: 7em;
+    }
+    
     .about-text {
         width: 100%
     }
@@ -173,8 +183,7 @@ header div a:hover {
 }
 
 @media (max-width: 740px) {
-    #about {
-        padding-top: 5em;
+    #about h2 {
     }
 }
 
@@ -350,7 +359,7 @@ header div a:hover {
 #contact h2 {
     position: relative;
     display: inline;
-    z-index: 100;
+    z-index: 1;
 }
 
 #contact h2::after {
