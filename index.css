@@ -31,7 +31,6 @@ header div a {
 
 header div a:hover {
     border-bottom: 3px solid white;
-    transition: 0.2s;
 }
 
 
@@ -310,6 +309,7 @@ header div a:hover {
     background-color: rgb(76, 133, 83);
     font-weight: 500;
     padding: 1em;
+    transition: 0.2s ease-out
 }
 
 .more-projects-button:hover {
@@ -399,14 +399,14 @@ input[type="submit"] {
     cursor: pointer;
     background-color: rgb(252, 237, 102);
     align-self: flex-start;
-    transition: 0.3s;
+    transition: 0.2s ease-out;
 }
 
 input[type="submit"]:hover {
     background-color: rgb(228, 214, 89);
 }
 
-/* footer ---------------------------------------------------------------------*/
+/* FOOTER -----------------------------------------------------------------*/
 
 footer {
     display: flex;
